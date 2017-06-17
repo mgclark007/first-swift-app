@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Swift App
 //
-//  Created by Alan Clark on 6/16/17.
+//  Created by Matthew Clark on 6/16/17.
 //  Copyright © 2017 Matthew Clark. All rights reserved.
 //
 
