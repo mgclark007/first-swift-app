@@ -34,26 +34,41 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9t-YS-Zxe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mrs-yl-Ivy">
-                                <rect key="frame" x="139.5" y="151" width="96" height="30"/>
-                                <state key="normal" title="NO, PUSH ME"/>
-                                <connections>
-                                    <action selector="button2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I75-mr-gE5"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XS8-eI-EP3">
+                                <rect key="frame" x="137.5" y="161" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="su7-wK-N6R"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiC-5g-lr8">
+                                <rect key="frame" x="137.5" y="211" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tCI-em-8Y3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="XS8-eI-EP3" firstAttribute="top" secondItem="f2p-77-zMf" secondAttribute="bottom" constant="20" id="08Q-M3-UdV"/>
                             <constraint firstItem="27S-sP-epy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ll-ZX-aMF"/>
-                            <constraint firstItem="Mrs-yl-Ivy" firstAttribute="top" secondItem="f2p-77-zMf" secondAttribute="bottom" constant="10" id="Raz-vR-NSr"/>
+                            <constraint firstItem="XS8-eI-EP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TWw-PM-BnS"/>
                             <constraint firstItem="f2p-77-zMf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TgR-kK-jpr"/>
                             <constraint firstItem="27S-sP-epy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Vc5-1C-KL7"/>
-                            <constraint firstItem="Mrs-yl-Ivy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YSX-e5-DrD"/>
                             <constraint firstItem="f2p-77-zMf" firstAttribute="top" secondItem="27S-sP-epy" secondAttribute="bottom" constant="10" id="f7o-69-P4O"/>
+                            <constraint firstItem="RiC-5g-lr8" firstAttribute="top" secondItem="XS8-eI-EP3" secondAttribute="bottom" constant="20" id="oJF-Qj-ysb"/>
+                            <constraint firstItem="RiC-5g-lr8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xTz-L9-xbl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="coolLabel" destination="27S-sP-epy" id="som-Eb-Y7i"/>
+                        <outlet property="text1" destination="XS8-eI-EP3" id="uZw-Ns-QFk"/>
+                        <outlet property="text2" destination="RiC-5g-lr8" id="tet-rN-JVm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
